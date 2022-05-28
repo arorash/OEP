@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Employment Express</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+    <link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/registerStyle.css" />
+
+    <link rel="stylesheet" href="css/headercss.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <link href="css/stateStyle.css" rel="stylesheet" />
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" rel="stylesheet" />
+    
+
+    
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear" id='navSticky'>
+        <div class="container">
+
+            <img src="img/logo_1.png" alt="" width="250" height="55">
+
+        </div>
+    </nav>
+    <div class="page-content" style="background-image: url(img/77833.jpg);width:100%;">
+        <div class="wizard-v3-content">
+            <div class="wizard-form">
+                <div class="wizard-header">
+                    <h3 class="heading">Register</h3>
+                    <p>Fill all form field to go next step</p>
+                </div>
+                <form class="form-register" id="form-total">
+
+                    <!-- SECTION 1 -->
+                    <h2>
+                        <span class="step-icon"><i class="fas fa-user"></i></span>
+                        <span class="step-text">Personal</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+                            <h3>Personal Information:</h3>
+                            <br />
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" style="margin-top:0%; margin-bottom:10px;" class="form-control input-field" id="full_name" name="full_name" required>
+
+                                        <span class="label"> Full Name*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="email" name="email" required>
+                                        <span class="label"> Email*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="date" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="dob" name="dob" required>
+                                        <span class="label"> DOB*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="password" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="password" name="password" required>
+                                        <span class="label">Password*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="number" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="phone" name="phone" required>
+                                        <span class="label">Phone Number*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="address" name="address" required>
+                                        <span class="label">Address*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="refer_by" name="refer_by" required>
+                                        <span class="label">Referred By</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div id="radio">
+                                    <label>Gender* : </label>
+                                    <input type="radio" name="gender" value="Male" checked class="radio-1"> Male
+                                    <input type="radio" name="gender" value="Female"> Female
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section2 -->
+                    <h2>
+                        <span class="step-icon"><i class="fas fa-user-graduate"></i></span>
+                        <span class="step-text">Education Details</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+                            <h3>Higher Educational Information:</h3>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <select name="qualification" id="qualification" style="width: 100%;" onchange="edu_open()">
+                                        <option value="0" selected>Select The Qualification</option>
+                                        <option value="Phd">Doctorate/Phd</option>
+                                        <option value="Post-Graduate">Masters/Post-Graduation</option>
+                                        <option value="Graduate">Graduation</option>
+                                        <option value="12th">12th</option>
+                                        <option value="10th">10th</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="course" name="course" required disabled>
+                                        <span class="label">Course</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" name="university" id="university" style="margin-top:0%; margin-bottom:10px;" class="form-control" required disabled>
+                                        <span class="label">University/Board</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="number" name="year" id="year" style="margin-top:0%; margin-bottom:10px;" class="form-control" required disabled>
+                                        <span class="label">Passing Year</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="number" name="percentage" id="percentage" style="margin-top:0%; margin-bottom:10px;" class="form-control" required disabled>
+                                        <span class="label">Score/Percentage</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </section>
+
+
+                    <!-- SECTION 3 -->
+                    <h2>
+                        <span class="step-icon"><i class="fas fa-briefcase"></i></span>
+                        <span class="step-text">Work Experience</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+                            <h3>Recent Work Experience Information:</h3>
+                            <p style="color:red;">*(You also skip this step)</p>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" id="company" style="margin-top:0%; margin-bottom:10px;" name="company" required>
+                                        <span class="label">Company Name</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="designation" name="designation" required>
+                                        <span class="label">Designation</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <label>From : </label>
+                                    <label class="form-row-inner">
+                                        <input type="date" id="from" style="margin-top:0%; margin-bottom:10px;" name="from" required>
+                                    </label>
+                                </div>
+                                <div class="form-holder">
+                                    <label>To : </label>
+                                    <label class="form-row-inner">
+                                        <input type="date" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="to" name="to" required>
+
+                                    </label>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="team" name="team" required>
+                                        <span class="label">Team(optional)</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="discription" name="discription" required>
+                                        <span class="label">Discription(optional)</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="text" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="reporting_to" name="reporting_to" required>
+                                        <span class="label">Reporting To(optional)</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner" style="width: 100%;">
+                                        <input type="number" class="form-control" style="margin-top:0%; margin-bottom:10px;" id="contact" name="contact" required>
+                                        <span class="label">Contact(optional)</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                    </section>
+                    <!-- SECTION 4 -->
+                    <h2>
+                        <span class="step-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="step-text">Job Location</span>
+                    </h2>
+                    <section id="reg_frm">
+                        <div class="inner">
+                            <h3>Prefered Job Location:</h3>
+                            <br />
+                            <div class="form-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
+                                            <label>Select : </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center form-holder">
+                                            <select id="locates_a" class="selectpicker" onchange="s_loc_a()" multiple data-live-search="true">
+                                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                <option value="Assam">Assam</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Chandigarh">Chandigarh</option>
+                                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                                <option value="Daman and Diu">Daman and Diu</option>
+                                                <option value="Meghalaya">Meghalaya</option>
+                                                <option value="Mizoram">Mizoram</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Lakshadweep">Lakshadweep</option>
+                                                <option value="Puducherry">Puducherry</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Karnataka">Karnataka</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Manipur">Manipur</option>
+                                                <option value="Nagaland">Nagaland</option>
+                                                <option value="Odisha">Odisha</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Sikkim">Sikkim</option>
+                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                <option value="Telangana">Telangana</option>
+                                                <option value="Tripura">Tripura</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                                
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="oth_loc_a">
+
+                                    </div>
+                                    <!--<div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
+                                            <label>Category2 : </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center form-holder">
+                                            <select id="locates_b" class="selectpicker" onchange="s_loc_b()" multiple>
+                                                
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="oth_loc_b">
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
+                                            <label>Category3 : </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center form-holder">
+                                            <select id="locates_c" class="selectpicker" onchange="s_loc_c()" multiple>
+                                                
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="oth_loc_c">
+
+                                    </div>-->
+                                </div>
+                            </div>
+                            <br />
+                            <h3>Domains :</h3>
+                            <br />
+                            <div class="form-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
+                                            <label>Select : </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 <!--justify-->-content-center form-holder">
+                                            <select class="selectpicker" id="domain_sel" onchange="s_domain()" multiple data-live-search="true">
+                                                <option value="other">Other</option>
+                                                <option value="Programming Languages">Programming Languages</option>
+                                                <option value="Web Development">Web Development</option>
+                                                <option value="Data Structures">Data Structures</option>
+                                                <option value="Open Source Experience">Open Source Experience</option>
+                                                <option value="CodingJava Script">CodingJava Script</option>
+                                                <option value="Security">Security</option>
+                                                <option value="Machine Learning">Machine Learning</option>
+                                                <option value="Debugging">Debugging</option>
+                                                <option value="UX/UI">UX/UI</option>
+                                                <option value="Front-End & Back-End Development">Front-End & Back-End Development</option>
+                                                <option value="Cloud Management">Cloud Management</option>
+                                                <option value="Agile Development">Agile Development</option>
+                                                <option value="STEM Skills">STEM Skills</option>
+                                                <option value="CAD">CAD</option>
+                                                <option value="Design">Design</option>
+                                                <option value="Prototyping">Prototyping</option>
+                                                <option value="Testing">Testing</option>
+                                                <option value="Troubleshooting">Troubleshooting</option>
+                                                <option value="Project Launch">Project Launch</option>
+                                                <option value="Lean Manufacturing">Lean Manufacturing</option>
+                                                <option value="Workflow Development">Workflow Development</option>
+                                                <option value="Computer Skills">Computer Skills</option>
+                                                <option value="SolidWorks">SolidWorks</option>
+                                                <option value="Budgeting">Budgeting</option>
+                                                <option value="Technical Report Writing">Technical Report Writing</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="dom_other"></div>
+                                </div>
+                            </div>
+                            <br />
+                            <h3>Skills :</h3>
+                            <br />
+
+                            <div class="form-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
+                                            <label>Select : </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center form-holder">
+                                            <select class="selectpicker" id="skill_sel" onchange="s_skill()" multiple data-live-search="true">
+                                                <option value="other">Other</option>
+                                                <option value="Active Listening">Active Listening</option>
+                                                <option value="Adaptability">Adaptability</option>
+                                                <option value="Communication">Communication</option>
+                                                <option value="Creativity">Creativity</option>
+                                                <option value="Critical Thinking">Critical Thinking</option>
+                                                <option value="Customer Service">Customer Service</option>
+                                                <option value="Decision Making">Decision Making</option>
+                                                <option value="Interpersonal Communication">Interpersonal Communication</option>
+                                                <option value="Management">Management</option>
+                                                <option value="Leadership">Leadership</option>
+                                                <option value="Organization">Organization</option>
+                                                <option value="Public Speaking">Public Speaking</option>
+                                                <option value="Problem-solving">Problem-solving</option>
+                                                <option value="Teamwork">Teamwork</option>
+                                                <option value="Self Motivation">Self Motivation</option>
+                                                <option value="Time Management">Time Management</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="skill_other"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   
+    <script src="js/knockout-3.2.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+   
+    <script src="js/jquery.steps.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/registerMain.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+
+</body>
+
+
+
+</html>

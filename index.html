@@ -1,0 +1,1607 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employment Express</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/headercss.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /*collapse tab...#what we do*/
+        
+        h4,
+        .special-heading .info-block h4 {
+            font-size: 28px;
+        }
+        
+        @media (max-width: 479px) {
+            h4,
+            .special-heading .info-block h4 {
+                font-size: 24px;
+            }
+        }
+        
+        .collapse-section .image_cover {
+            background-position: 50% 50%;
+            background-size: cover;
+            bottom: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50%;
+            z-index: 2;
+        }
+        
+        @media (max-width: 992px) {
+            .collapse-section .image_cover {
+                height: 0;
+                margin-bottom: -26px;
+                padding-bottom: 65%;
+                position: inherit;
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .collapse-section .col-lg-6 {
+                position: inherit;
+            }
+        }
+        
+        [role="tablist"] .card {
+            background: none;
+            border: none;
+            border-radius: 0;
+        }
+        
+        [role="tablist"] .card-header {
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        
+        [role="tablist"] .card-header a {
+            background-color: #55bce7;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            line-height: 1.6em;
+            padding: 18px 50px 15px 32px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        [role="tablist"] .card-header a:hover {
+            color: #fff;
+            opacity: 1;
+        }
+        
+        [role="tablist"] .card-header a.collapsed {
+            background-color: #736fb3;
+            color: #fff;
+        }
+        
+        [role="tablist"] .card-header a.collapsed:hover {
+            background-color: #55bce7;
+            color: #fff;
+            opacity: 1;
+            text-decoration: none;
+        }
+        
+        [role="tablist"] .card-body {
+            border: 1px solid #373737;
+            border-top: none;
+            border-width: 1px;
+            color: #7f7f7f;
+            padding: 32px 35px 20px;
+        }
+        
+        [role="tablist"] [role="tablist"] .card-body .ls {
+            border: 1px solid #ddd;
+        }
+        
+        [role="tablist"] .media img {
+            max-width: 80px;
+        }
+        
+        .collapse-table {
+            padding: 115px 232px 160px 117px;
+        }
+        
+        @media (max-width: 992px) {
+            .collapse-table {
+                padding: 50px 35px;
+            }
+        }
+        
+        .half-section {
+            background-image: url('img/footer-bg.jpg');
+        }
+        
+        @media (max-width: 576px) {
+            .candidate-page .row {
+                margin-left: -7px;
+                margin-right: -7px;
+            }
+            .candidate-page .row .contact-header {
+                margin: 30px 0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .candidate-page .contact-header {
+                margin: 30px 0;
+            }
+        }
+        
+        .main_contact_form .contact-header {
+            padding-bottom: 73px;
+            padding-top: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .main_contact_form .contact-header {
+                padding: 14px 0 36px;
+            }
+        }
+        
+        .contact-header {
+            padding-bottom: 45px;
+            text-transform: uppercase;
+        }
+        
+        @media (max-width: 767px) {
+            .contact-header {
+                padding-bottom: 15px;
+            }
+        }
+        
+        .contact-header h4 {
+            font-size: 40px;
+            line-height: 0;
+        }
+        
+        .contact-header h5 {
+            margin-bottom: -10px;
+        }
+        
+        @media (max-width: 384px) {
+            .contact-header h4 {
+                font-size: 29px;
+            }
+        }
+        
+        .collapse-header {
+            margin-bottom: 30px;
+            margin-top: 7px;
+        }
+        
+        .pt-30 {
+            padding-top: 30px;
+        }
+        
+        [data-toggle="collapse"] {
+            display: inline-block;
+            margin-top: 10px;
+            position: relative;
+        }
+        
+        [data-toggle="collapse"]:after {
+            font-family: "FontAwesome";
+            font-size: 10px;
+            font-weight: 100;
+            margin-top: -7px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+        }
+        
+        .modal-backdrop.show {
+            background-color: #4d4d4d;
+            opacity: 0.9;
+        }
+        
+        .ds {
+            background-color: #323232;
+            color: #9a9a9a;
+        }
+        
+        .ds * .ds {
+            background-color: #252525;
+        }
+        
+        .page_footer {
+            background-color: #1f232b;
+            color: #808080;
+        }
+        
+        .page_copyright {
+            background-color: #17181c;
+            color: #808080;
+        }
+        /* dark background section - .ds.ms */
+        
+        .ds.ms {
+            background-color: #252525;
+        }
+        
+        .ds.ms .ds.ms {
+            background-color: #2a2a2a;
+        }
+        /* dark section blue - .ds.bs */
+        
+        .ds.bs {
+            background-color: #2f3e47;
+        }
+        
+        .ds a:not(.btn) {
+            color: #fff;
+        }
+        
+        .ds a:not(.btn):hover {
+            opacity: 1;
+        }
+        
+        .ds h1,
+        .ds h2,
+        .ds h3,
+        .ds h4,
+        .ds h5,
+        .ds h6 {
+            color: #fff;
+        }
+        
+        .ds h1 a,
+        .ds h2 a,
+        .ds h3 a,
+        .ds h4 a,
+        .ds h5 a,
+        .ds h6 a {
+            color: #fff;
+        }
+        
+        .ds h1 a:hover,
+        .ds h2 a:hover,
+        .ds h3 a:hover,
+        .ds h4 a:hover,
+        .ds h5 a:hover,
+        .ds h6 a:hover {
+            opacity: 0.8;
+        }
+        
+        .ds .ls {
+            background-color: #fff;
+            color: #808080;
+        }
+        
+        .ds .ls h1,
+        .ds .ls h2,
+        .ds .ls h3,
+        .ds .ls h4,
+        .ds .ls h5,
+        .ds .ls h6 {
+            color: #323232;
+        }
+        
+        .ds .ls h1 a,
+        .ds .ls h2 a,
+        .ds .ls h3 a,
+        .ds .ls h4 a,
+        .ds .ls h5 a,
+        .ds .ls h6 a {
+            color: inherit;
+        }
+        
+        .ds .ls h1 a:hover,
+        .ds .ls h2 a:hover,
+        .ds .ls h3 a:hover,
+        .ds .ls h4 a:hover,
+        .ds .ls h5 a:hover,
+        .ds .ls h6 a:hover {
+            color: #55bce7;
+        }
+        
+        .ds .ls a:not(.btn) {
+            color: #323232;
+        }
+        
+        .ds .ls a:not(.btn):hover {
+            color: #55bce7;
+        }
+        
+        .ds label {
+            color: #fff;
+        }
+        
+        .ds hr {
+            background-color: #454545;
+            border-color: #454545;
+        }
+        
+        .ds blockquote,
+        .ds .blockquote {
+            color: #fff;
+        }
+        
+        .ds pre {
+            color: #9a9a9a;
+        }
+        
+        .ds .muted-bg,
+        .ds .hero-bg {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .ds .bordered {
+            border-color: #454545;
+        }
+        
+        .ds .color-main {
+            color: #55bce7;
+        }
+        
+        .ds .color-main2 {
+            color: #736fb3;
+        }
+        
+        .ds .color-dark,
+        .ds .color-darkgrey {
+            border-color: #fff;
+            color: #fff;
+        }
+        
+        .ds .links-maincolor a {
+            color: #55bce7;
+        }
+        
+        .ds .links-maincolor a:hover {
+            color: #fff;
+        }
+        
+        .ds .links-maincolor2 a {
+            color: #736fb3;
+        }
+        
+        .ds .links-maincolor2 a:hover {
+            color: #fff;
+        }
+        
+        .ds .links-maincolor3 a {
+            color: #cf423c;
+        }
+        
+        .ds .links-maincolor3 a:hover {
+            color: #fff;
+        }
+        
+        .ds .links-grey a {
+            color: #9a9a9a;
+        }
+        
+        .ds .links-grey a:hover {
+            color: #fff;
+        }
+        
+        .ds .links-darkgrey a {
+            color: #fff;
+        }
+        
+        .ds .links-darkgrey a:hover {
+            color: #55bce7;
+        }
+        
+        .ds.s-bordertop:before,
+        .ds.s-borderbottom:after,
+        .ds.s-bordertop-container .container:before,
+        .ds.s-borderbottom-container .container:after {
+            background-color: #454545;
+        }
+        
+        .ds.s-bordered-columns [class*='col-']+[class*='col-']:before {
+            background-color: #454545;
+        }
+        
+        .ds .btn-darkgrey {
+            background-color: #55bce7;
+            color: #55bce7;
+        }
+        
+        .ds .btn-maincolor2:hover,
+        .ds .btn-maincolor3:hover,
+        .ds .btn-darkgrey:hover,
+        .ds .btn-outline-maincolor:hover,
+        .ds .btn-outline-maincolor2:hover,
+        .ds .btn-outline-maincolor3:hover,
+        .ds .btn-outline-darkgrey:hover {
+            color: #fff;
+        }
+        
+        .ds .btn-outline-maincolor:hover,
+        .ds .btn-maincolor:hover {
+            background-color: #55bce7;
+            border: 1px solid #55bce7;
+            color: #fff;
+        }
+        
+        .ds .btn-outline-maincolor2:hover,
+        .ds .btn-maincolor2:hover {
+            background-color: #57539c;
+        }
+        
+        .ds .btn-outline-maincolor3:hover,
+        .ds .btn-maincolor3:hover {
+            background-color: #ad302b;
+        }
+        
+        .ds .btn-outline-darkgrey {
+            border-color: #fff;
+            color: #fff;
+        }
+        
+        .ds .btn-outline-darkgrey:hover,
+        .ds .btn-darkgrey:hover {
+            background-color: #191919;
+            border-color: #191919;
+        }
+        
+        .ds a.fa {
+            border-color: #454545;
+            color: #fff;
+        }
+        
+        .ds a.bg-icon {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .ds .fa.color-icon:hover {
+            color: #fff;
+        }
+        
+        .ds .color-icon.bg-icon {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .ds .color-icon.bg-icon:hover {
+            color: #fff;
+        }
+        
+        .ds .color-bg-icon:hover {
+            background-color: #55bce7;
+        }
+        
+        .contact-form-ds {
+            background-color: rgba(31, 35, 43, 0.7);
+            color: #fff;
+        }
+        
+        .ds {
+            /* shop */
+        }
+        
+        .ds .list-bordered li {
+            border-color: #454545;
+        }
+        
+        .ds input[type="text"],
+        .ds input[type="email"],
+        .ds input[type="url"],
+        .ds input[type="password"],
+        .ds input[type="search"],
+        .ds input[type="tel"],
+        .ds input[type="number"],
+        .ds textarea,
+        .ds select,
+        .ds .form-control {
+            background-color: rgba(15, 15, 15, 0.5);
+            border: none;
+            color: #fff;
+        }
+        
+        .ds .form-group-select:before {
+            border-color: #454545;
+        }
+        
+        .ds .form-control:focus {
+            border-color: #525252;
+        }
+        
+        .ds .form-control:-moz-placeholder {
+            color: #9a9a9a;
+            opacity: 1;
+        }
+        
+        .ds .form-control::-moz-placeholder {
+            color: #9a9a9a;
+            opacity: 1;
+        }
+        
+        .ds .form-control:-ms-input-placeholder {
+            color: #9a9a9a;
+        }
+        
+        .ds .form-control::-webkit-input-placeholder {
+            color: #fff;
+        }
+        
+        .ds .form-control:focus:-moz-placeholder {
+            color: transparent;
+        }
+        
+        .ds .form-control:focus::-moz-placeholder {
+            color: transparent;
+        }
+        
+        .ds .form-control:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+        
+        .ds .form-control:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+        
+        .ds .contact-form.transparent-background .form-control {
+            border-color: #454545;
+        }
+        
+        .ds .tab-content {
+            border-color: #454545;
+        }
+        
+        .ds .nav-tabs .nav-link {
+            border-color: #454545;
+        }
+        
+        .ds .owl-theme .owl-dots .owl-dot span {
+            border-color: #fff;
+        }
+        
+        .ds .post-adds .share_button>i,
+        .ds .post-adds .like_button>i {
+            color: #fff;
+        }
+        
+        .ds .side-item {
+            border-color: #454545;
+        }
+        
+        .ds .excerpt {
+            color: #fff;
+        }
+        
+        .ds .reply a {
+            color: #fff;
+        }
+        
+        .ds .widget_search .form-inline .btn,
+        .ds .widget_product_search [type="submit"],
+        .ds .widget_mailchimp .form-inline .btn {
+            background-color: transparent;
+            color: #55bce7;
+        }
+        
+        .ds .widget_shopping_cart .cart_list,
+        .ds .widget_recent_entries li,
+        .ds .widget_recent_comments li,
+        .ds .widget_archive li,
+        .ds .widget_categories li,
+        .ds .widget_meta li,
+        .ds .widget_nav_menu li,
+        .ds .widget_pages li,
+        .ds .widget_popular_entries li {
+            border-color: #454545;
+        }
+        
+        .ds .widget_nav_menu ul ul {
+            border-color: #454545;
+        }
+        
+        .ds .widget_popular_entries .media-heading {
+            color: #fff;
+        }
+        
+        .ds .tweet_list li+li .tweet_right {
+            border-color: #454545;
+        }
+        
+        .ds .widget_tag_cloud a {
+            border-color: #fff;
+            color: #fff;
+        }
+        
+        .ds .widget_shopping_cart li a+a {
+            color: #fff;
+        }
+        
+        .ds .widget_shopping_cart li a+a:hover {
+            color: #55bce7;
+        }
+        
+        .ds .summary .price {
+            border-color: #454545;
+            color: #fff;
+        }
+        
+        .ds .summary .product_meta {
+            border-color: #454545;
+        }
+        
+        .ds .widget_price_filter .price_label {
+            color: #fff;
+        }
+        
+        .ds #calendar_wrap {
+            border-color: #454545;
+        }
+        
+        .ds .widget_calendar table {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: #454545;
+        }
+        
+        .ds .widget_calendar tfoot td a {
+            border-color: #454545;
+        }
+        
+        .ds .widget_calendar caption,
+        .ds .widget_calendar thead,
+        .ds .widget_calendar th {
+            color: #fff;
+        }
+        
+        .ds .widget_calendar tbody td a:hover {
+            color: #fff;
+        }
+        
+        .ds .grid-view h3:before,
+        .ds .grid-view h3:after {
+            background-color: #454545;
+        }
+        
+        .ds .owl-carousel.product-thumbnails .owl-nav>div:after {
+            color: #fff;
+        }
+        
+        .ds .ui-slider {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .ds .ui-slider .ui-slider-handle {
+            background-color: #fff;
+        }
+        
+        .ds #sort_view {
+            background-color: transparent;
+            color: #fff;
+        }
+        
+        .ds #toggle_shop_view.grid-view:after,
+        .ds #toggle_shop_view:before {
+            background-color: rgba(247, 247, 247, 0.05);
+        }
+        
+        .ds .widget_layered_nav .color-filters a:before {
+            border-color: #454545;
+        }
+        
+        .ds .table.cart a {
+            color: #fff;
+        }
+        
+        .ds .pagination>li>a,
+        .ds .pagination>li>span {
+            background-color: transparent;
+            border: 1px solid #454545;
+            color: #fff;
+        }
+        
+        .ds .pagination>li.active>a,
+        .ds .pagination>li.active>span,
+        .ds .pagination>li>a:hover,
+        .ds .pagination>li>span:hover,
+        .ds .pagination>li>a:focus,
+        .ds .pagination>li>span:focus {
+            background-color: #55bce7;
+            border-color: #55bce7;
+            color: #fff;
+        }
+        
+        .ds .thumbnail {
+            background-color: transparent;
+        }
+        
+        .ds .thumbnail h3 a {
+            color: #fff;
+        }
+        
+        .ds .thumbnail .caption {
+            background-color: rgba(252, 252, 252, 0.05);
+            border-color: transparent;
+        }
+        
+        .ds .progress {
+            background-color: #454545;
+        }
+        
+        .ds .panel-heading .panel-title>a.collapsed,
+        .ds .vertical-tabs .nav>li>a {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #fff;
+        }
+        
+        .ds .panel-heading .panel-title>a,
+        .ds .panel-heading .panel-title>a:hover,
+        .ds .vertical-tabs .nav>li.active>a,
+        .ds .vertical-tabs .nav>li>a:hover {
+            background-color: #55bce7;
+        }
+        
+        .ds .panel-heading .panel-title>a:hover:after,
+        .ds .vertical-tabs .nav>li>a:hover:after {
+            color: #fff;
+        }
+        
+        .ds .entry-meta .comments-link a {
+            color: #fff;
+        }
+        
+        .ds #timetable tbody th,
+        .ds #timetable tbody td {
+            border-color: #454545;
+        }
+        
+        .ds #isotope_filters a,
+        .ds .filters a {
+            color: #fff;
+        }
+        
+        .ds div .fw-shortcode-calendar-wrapper .page-header h3,
+        .ds div .btn-group button[data-calendar-nav],
+        .ds div .btn-group button[data-calendar-nav*='today'] {
+            color: #fff;
+        }
+        
+        .ls.ms .panel-title>a.collapsed:hover,
+        .ls.ms .panel-title>a:hover {
+            background-color: #323232;
+        }
+        
+        .ls.ms .panel-title>a.collapsed {
+            background-color: #fff;
+        }
+        
+        .ls.collapse-section [role="tablist"] .card-body {
+            border: 1px solid #e5e5e5;
+        }
+        
+        .row.c-gutter-100>[class*="col-"] {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        
+        .c-gutter-80 [class*="col-"],
+        .row.c-gutter-80>[class*="col-"] {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        .c-gutter-60 [class*="col-"],
+        .row.c-gutter-60>[class*="col-"] {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .c-gutter-50 [class*="col-"],
+        .row.c-gutter-50>[class*="col-"] {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+        .c-gutter-30 [class*="col-"],
+        .row.c-gutter-30>[class*="col-"] {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .c-gutter-25 [class*="col-"],
+        .row.c-gutter-25>[class*="col-"] {
+            padding-left: 13px;
+            padding-right: 12px;
+        }
+        
+        .c-gutter-20 [class*="col-"],
+        .row.c-gutter-20>[class*="col-"] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .c-gutter-15 [class*="col-"],
+        .row.c-gutter-15>[class*="col-"] {
+            padding-left: 8px;
+            padding-right: 7px;
+        }
+        
+        .c-gutter-10 [class*="col-"],
+        .row.c-gutter-10>[class*="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .c-gutter-5 [class*="col-"],
+        .row.c-gutter-5>[class*="col-"] {
+            padding-left: 3px;
+            padding-right: 2px;
+        }
+        
+        .c-gutter-2 [class*="col-"],
+        .row.c-gutter-2>[class*="col-"] {
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+        
+        .c-gutter-1 [class*="col-"],
+        .row.c-gutter-1>[class*="col-"] {
+            padding-left: 1px;
+            padding-right: 0;
+        }
+        /*same as bootstrap .no-gutters class*/
+        
+        .c-gutter-0 [class*="col-"],
+        .row.c-gutter-0>[class*="col-"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        /* rows */
+        
+        .c-gutter-100 .row,
+        div.row.c-gutter-100 {
+            margin-left: -50px;
+            margin-right: -50px;
+        }
+        
+        .c-gutter-80 .row,
+        div.row.c-gutter-80 {
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+        
+        .c-gutter-60 .row,
+        div.row.c-gutter-60 {
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        
+        .c-gutter-50 .row,
+        div.row.c-gutter-50 {
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+        
+        .c-gutter-30 .row,
+        div.row.c-gutter-30 {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        
+        .c-gutter-25 .row,
+        div.row.c-gutter-25 {
+            margin-left: -13px;
+            margin-right: -12px;
+        }
+        
+        .c-gutter-20 .row,
+        div.row.c-gutter-20 {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        
+        .c-gutter-15 .row,
+        div.row.c-gutter-15 {
+            margin-left: -8px;
+            margin-right: -7px;
+        }
+        
+        .c-gutter-10 .row,
+        div.row.c-gutter-10 {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        
+        .c-gutter-5 .row,
+        div.row.c-gutter-5 {
+            margin-left: -3px;
+            margin-right: -2px;
+        }
+        
+        .c-gutter-2 .row,
+        div.row.c-gutter-2 {
+            margin-left: -1px;
+            margin-right: -1px;
+        }
+        
+        .c-gutter-1 .row,
+        div.row.c-gutter-1 {
+            margin-left: -1px;
+            margin-right: 0;
+        }
+        
+        .c-gutter-0 .row,
+        div.row.c-gutter-0 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+    <style>
+        /*logo Slider */
+        
+        .slick-slide {
+            margin: 0px 20px;
+        }
+        
+        .slick-slide img {
+            width: 100%;
+        }
+        
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slick-list:focus {
+            outline: none;
+        }
+        
+        .slick-list.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+        
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        
+        .slick-track:before,
+        .slick-track:after {
+            display: table;
+            content: '';
+        }
+        
+        .slick-track:after {
+            clear: both;
+        }
+        
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+        
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        
+        [dir='rtl'] .slick-slide {
+            float: right;
+        }
+        
+        .slick-slide img {
+            display: block;
+        }
+        
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+        
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+        
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+        
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+        
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div>
+        <header class="topbar" style="background-image: url('img/footer-bg.jpg')">
+            <div class="container ">
+                <div class="row">
+                    <!-- social icon-->
+
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align:center; margin:30px auto;">
+                        <button class="btn btn-light" style="height: 50px; width: 250px;" onclick="location.href='login.aspx'">Looking For Job? </button>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center; margin: 20px auto;"><img src="img/circleE2logo.png" alt="logo" width="80" height="80"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align:center; margin:30px auto;">
+                        <button class="btn btn-light" style="height: 50px; width: 250px;" onclick="location.href='contact.html'">Looking For Staff? </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear" id='navSticky'>
+            <div class="container">
+       
+                <a class="navbar-brand" href="index.html" style="text-transform: uppercase;"><img src="img/logo_1.png"  width="250" height="55" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="work_with_us.html">Work With Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.aspx">Login</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- END nav -->
+    <!-- END nav -->
+
+
+    <video width="100%" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="indexvedio.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    <section class="ds half-section collapse-section" >
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-6" style="padding-top:50px;">
+                <img src="img/half_image.jpg" width="100%" />
+
+
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-6 collapse-table" style="padding-bottom:20px">
+                <div class="contact-header collapse-header heading pt-30">
+
+                    <h4>
+                        What We DO
+                    </h4>
+                </div>
+                <div id="accordion01" role="tablist" >
+
+                    <div class="card-header" role="tab" id="collapse03_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                                CAREER COUNSELLING
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black">
+                                Every job seeker registered with us will go through a individual career counselling session with our counsellor. This session will provide us required understanding about the job seeker's mindset and career aspirations to assist them better in job placement
+                                and career progression. A job seeker may take these counselling sessions any number of times as required for rest of his lifetime at no additional cost.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-header" role="tab" id="collapse04_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                                Professional training
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black">
+                                We are going to conduct professional trainings (Skill Development Training, Personality Development Classes and Spoken English classes) for every individual job seeker from our listed Institutions and Training Partners if Human Resource professional recommends
+                                for the same.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-header" role="tab" id="collapse05_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
+                                Personality development classes
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse05" class="collapse" role="tabpanel" aria-labelledby="collapse05_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black">
+                                We are conducting professional training to every individual job seeker if human resource Manager guided for that from our listed institution we are paid stipend for that. And after training we are liable to place them otherwise we are paying job less
+                                allowance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-header" role="tab" id="collapse06_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                                Job Guarantee
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse06" class="collapse" role="tabpanel" aria-labelledby="collapse06_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black">
+                                If a Jobseeker doesn’t get job within 100 days
+                                after his/her training, full refund will be
+                                provided.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!--<div class="card-header" role="tab" id="collapse07_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse07" aria-expanded="false" aria-controls="collapse07">
+                                Job loss Allowance
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse07" class="collapse" role="tabpanel" aria-labelledby="collapse07_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black">  we are providing job loss allowance to every staff from every companies from India. Job loss allowance seeker must be register with us and followed our rules for that.</p>
+                            <a href="#" data-toggle="modal" data-target="#thanksModal1" style="color:blue">See More</a>
+                        </div>
+                    </div>
+                    <div class="card-header" role="tab" id="collapse08_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse08" aria-expanded="false" aria-controls="collapse08">
+                                LIFETIME SERVICES & BENEFITS
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse08" class="collapse" role="tabpanel" aria-labelledby="collapse08_header" data-parent="#accordion01">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="color:black"> All the job seekers registered with us will be able to take benefits of our all services and allowance benefits for lifetime.</p>
+                        </div>
+                    </div>
+                    <div class="card-header" role="tab" id="collapse09_header">
+                        <h5>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse09" aria-expanded="false" aria-controls="collapse09">
+                                Charges
+                                <i style="position: absolute; right: 20px;" class="fas fa-angle-down"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse09" class="collapse" role="tabpanel" aria-labelledby="collapse09_header" data-parent="#accordion01" style="margin-bottom:10px">
+                        <div class="card-body" style="background-color:#a7d3fa">
+                            <p style="font-weight: bold;color:black"> JobSeeker: </p>
+                            <p style="color:black">One time counselling fee <span style="text-decoration: line-through;">INR 500/-</span> INR 200/-</p>
+                            <br />
+                            <p style="font-weight: bold;color:black"> Freelancer: </p>
+                            <p style="color:black">One time counselling fee <span style="text-decoration: line-through;">INR 500/-</span> INR 200/-</p>
+                        </div>
+                    </div>-->
+
+                </div>
+            </div>
+        </div>
+</div>
+    </section>
+
+    <section class="ftco-section ftco-counter" id="section-counter" style="background-image: url(images/bg_3.jpg); " data-stellar-background-ratio="0.5">
+        <div class="container" style="margin-top: 50px">
+            <div class="row d-md-flex align-items-center">
+                <div class="col-lg-4">
+                    <div class="heading-section pl-md-5 heading-section-white">
+                        <div class="ftco-animate">
+                           
+                            <h2 class="mb-4">Current Status</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row d-md-flex align-items-center">
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="2000">0</strong>
+                                    <span>Job Seeker Enrolled</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="1800">0</strong>
+                                    <span>Job Seeker Trained</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="100">0</strong>
+                                    <span>Corporate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="10">0</strong>
+                                    <span>Franchise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<div style="background-image:url('img/footer-bg.jpg');margin-top:0px">
+        <div class="container">
+            <h2 class="mb-4" style="text-align:center;font-size:60px;padding-top:40px;text-decoration:underline;color:white"><strong>Social Media</strong></h2>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center; margin: auto;">
+                    <a href="">
+                        <h2 style="text-decoration:underline;color:white">Facebook</h2>
+                    </a>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Femploymentexp&tabs=timeline&width=350&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="600"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12"></div>
+                <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center; margin: auto;">
+                    <a href="">
+                        <h2 style="text-decoration:underline;color:white">Twitter</h2>
+                    </a>
+                    <a class="twitter-timeline" data-width="350" data-height="600" href="?ref_src=twsrc%5Etfw">Tweets by employmentexp</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="container-fluid" style="background-color:white">
+        <h1 style="text-align:center;padding-top:30px;text-decoration:underline;padding-bottom:30px;">Our Partners/ Our Clients</h1>
+        <section class="customer-logos slider" style="padding-bottom:50px">
+            <div class="slide"><img src="img/images.png"></div>
+            <div class="slide"><img src="img/images (1).jpg"></div>
+            <div class="slide"><img src="img/Keva Industries-2.jpeg"></div>
+            <div class="slide"><img src="img/Britannia Engineering Limited-1.jpeg"></div>
+            <div class="slide"><img src="img/M&C Saatchi Performance-2.jpeg"></div>
+            <div class="slide"><img src="img/Emami Limited-1.jpg"></div>
+            <div class="slide"><img src="img/cafe-coffee-day-logo-png-4.png"></div>
+            <div class="slide"><img src="img/trivedi.jpg"></div>
+            <div class="slide"><img src="img/images.jpg"></div>
+            <div class="slide"><img src="img/KWW Wires & Strips-1.jpg"></div>
+            <div class="slide"><img src="img/7 Signs & Prints-1.jpg"></div>
+            <div class="slide"><img src="img/jaipur.jpg"></div>
+
+        </section>
+    </div>
+
+
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style=" background-image: url('img/footer-bg.jpg');">
+        <div class="container">
+            <div class="row mb-5 d-flex">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <div>
+                            <img src="img/E2logo.png" width="280" height="115" />
+                        </div>
+
+                        <h2 class="ftco-heading-2" style="margin-top:30px">Employment Express Verband LLP </h2>
+
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href=""><span class="icon-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Quick Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="work_with_us.html">Work With Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Details</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">ROOM NO. 15, PLOT NO. 22, Near MUNICIPAL SCHOOL, KHERWADI, BANDRA (E), Mumbai, Maharashtra, India 400051.</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+91)7905044451</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@employmentexpress.net</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+    <div class="modal   py-5" style="top:90px;" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body" >
+                    <img src="img/circleE2logo.png" style="	    margin-top: -85px;margin-left:140px;
+    width: 33%;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background: #6c757d;
+
+    ">
+                    <p style="text-align:center;color:black">Terms & Condition for job less Allowance</p>
+                    <ul>
+                        <li style="list-style-type:disc">You must attend career counselling after registering with us and before taking any interview. </li>
+                        <li style="list-style-type:disc"> You will be aligned for 30 interview appointments with in 100 Days after career counselling.</li>
+                        <li style="list-style-type:disc">You must attend 25 interviews out of 30 interviews.</li>
+                        <li style="list-style-type:disc">Your job aspiration must be realistic as per your skills and qualification.</li>
+                        <li style="list-style-type:disc">You must visit interview as per guided or advised dress up for interviews.</li>
+                        <li style="list-style-type:disc">You are supposed to suggest us 5 cities as per your choice for job recommendations. Minimum 2 cities from category C, 2 cities from category B and 1 city from category A cities.</li>
+                        <li style="list-style-type:disc"> If our internal HR recommends for any professional training, you must attend or join the training.</li>
+                        <li style="list-style-type:disc">
+                            If our internal HR suggests you for any personality development classes, spoken English classes or resume writing to improve your skills and present ability, you must adopt the suggestion to ensure we can serve you smoothly and
+                            inline with our goal of your placement in companies.
+                        </li>
+                        <li style="list-style-type:disc">Personality and Interview skill sessions are provided free of cost. You need to attend them if required/suggested by HR or Counsellor.</li>
+                        <li style="list-style-type:disc"> If 5 HRs (Who have taken your interviews) suggest you for lower position, your next interview will be aligned for lower position.</li>
+                        <li style="list-style-type:disc"> If 5 HRs (Who have taken your interviews) suggest for lower salary then we need to suggest you to go for lower salary. </li>
+                        <li style="list-style-type:disc">
+                            If you are employed on a job, doing part time work or a side bussiness or you have any source of income apart from looking for job, or you are getting any government benefit for unemployment then you are not entitled for Job Less
+                            Allowance.
+                        </li>
+                        <li style="list-style-type:disc">Jobless Allowance is Rs. 2000/- per month till you get the job.</li>
+                        <li style="list-style-type:disc">You as a job seeker must obey all the Terms & Conditions mentioned above to avail Job Less Allowance from Employment Express.</li>
+                        <li style="list-style-type:disc">If company needs to change any Terms and Conditions as per circumstances, Company has the right to change, alter or terminate any rule or Term & Condition without any prior notice.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal   py-5" style="top:90px;" id="thanksModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/circleE2logo.png" style="	    margin-top: -85px;margin-left:140px;
+    width: 33%;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background: #6c757d;
+
+    ">
+                    <p style="text-align:center;color:black">Rules & Regulation for Job loss allowance</p>
+                    <ul>
+                        <li style="list-style-type:disc"> You must be a registered job seeker to avail job loss allowance and registration should be 365 days prior to avail Job Loss Allowance. </li>
+                        <li style="list-style-type:disc">You must give notice to Employment Express before 15 days of leaving your present Job.</li>
+                        <li style="list-style-type:disc"> You must update your Resume every month.</li>
+                        <li style="list-style-type:disc"> You need to attend interview after 1 week of leaving the previous job and you need to attend minimum 2 interviews every week. </li>
+                        <li style="list-style-type:disc">We will align you for 10 Interviews in next one month and you have to take 8 interviews out of 10. If you still don't get job after 30 days you will get job loss allowance from us.</li>
+                        <li style="list-style-type:disc"> If new job is fit and fine as per your resume, you must join.</li>
+                        <li style="list-style-type:disc">Your job requirements must be realistic. </li>
+                        <li style="list-style-type:disc">Salary demand should be realistic and not above 20% higher than previous job.</li>
+                        <li style="list-style-type:disc">Job loss allowance is 50% of your in hand monthly salary or maximum up to Rs. 25,000/- per month which ever is lower.</li>
+                        <li style="list-style-type:disc">This allowance is not a Government aid, it's only a social responsibility as a Employment Service Provider. So you need to join our referred organization otherwise you need to return job loss allowance.</li>
+                        <li style="list-style-type:disc">
+                            You must obey all Terms & Conditions mentioned above for Job Loss Allowance. If you do not follow above rules and regulations, your registration will be cancelled & your all services and benefits from Employment Express will be
+                            Stopped/forfeited.
+                        </li>
+                        <li style="list-style-type:disc">In special case of taking gap from employment you must take prior approval from Employment Express to make sure that your registration is not cancelled.</li>
+                        <li style="list-style-type:disc">If company needs to change any term & condition as per any circumstance,company has the right to change,alter or terminate them without any prior notice.</listyle="list-style-type:disc">
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!--logo slider-->
+
+
+    <script>
+        //logo slider
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navSticky");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employment Express</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_tab.css">
+
+    <link href="css/headercss.css" rel="stylesheet" />
+
+    <style>
+
+
+        /*logo Slider */
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+            .slick-slide img {
+                width: 100%;
+            }
+
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+            .slick-list:focus {
+                outline: none;
+            }
+
+            .slick-list.dragging {
+                cursor: pointer;
+                cursor: hand;
+            }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+            .slick-track:before,
+            .slick-track:after {
+                display: table;
+                content: '';
+            }
+
+            .slick-track:after {
+                clear: both;
+            }
+
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        [dir='rtl'] .slick-slide {
+            float: right;
+        }
+
+        .slick-slide img {
+            display: block;
+        }
+
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+    </style>
+    <style>
+
+
+        /*--------------------------------------*/
+        /*     jpolly168 AeVale/OneSixEight     */
+        /*     XblackvelvetX                    */
+        /*     Main Elements,,,,,,,             */
+        /*     #wah comes int waves....wahhhhhh.*/
+        /*--------------------------------------*/
+
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,900);
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            margin-left: 2em;
+            margin-top: 2em;
+            border-radius: 200px;
+            float: center;
+        }
+
+        .jumbotron {
+            background-color: #ffffff;
+            border: 1px solid #AAA;
+            border-bottom: 3px solid #BBB;
+            padding: 0px;
+            margin-top: 4em;
+            overflow: hidden;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card {
+            background: #FFF;
+            display: block;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            border: 1px solid #AAA;
+            border-bottom: 3px solid #BBB;
+            padding: 0px;
+            margin-top: 5em;
+            overflow: hidden;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-body {
+            margin: 1em;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-none {
+            float: none !important;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .card-header {
+            width: 100%;
+            color: #2196F3;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-header-blue {
+            background-color: #2196F3;
+            color: #FFFFFF;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-header-red {
+            background-color: #F44336;
+            color: #FFFFFF;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-header-grey {
+            background-color: #424242;
+            color: #FFFFFF;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-header-orange {
+            background-color: #E65100;
+            color: #FFFFFF;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-header-pink {
+            background-color: #E91E63;
+            color: #FFFFFF;
+            border-bottom: 3px solid #BBB;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin-top: 0px;
+            overflow: hidden;
+            -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-heading {
+            display: block;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 24px;
+            margin-left: 1em;
+            border-bottom: 1px #2196F3;
+            color: #fff;
+        }
+
+        .card-footer {
+            border-top: 1px solid #000;
+        }
+
+     
+
+        .card-action-pink {
+            color: #E91E63;
+        }
+
+        .card-action-red {
+            color: #F44336;
+        }
+
+        .card-action-grey {
+            color: #424242;
+        }
+
+        .card-action-pink {
+            color: #E91E63;
+        }
+
+        .card-action-orange {
+            color: #E65100;
+        }
+
+        .img-fill {
+            max-height: 100%;
+            max-width: 100% display :inline-block;
+            margin: 1em;
+        }
+
+        .card-image {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 1em;
+        }
+
+            .card-image:first-child {
+                border-radius: 2px 2px 0 0;
+            }
+
+            .card-image:last-child {
+                border-radius: 0 0 2px 2px;
+            }
+
+            .card-image img {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+
+        .card-image-text {
+            background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0;
+            padding: 12px 16px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        /**OVERFLOW MENU**/
+        /**MENU SETTINGS POPUP**/
+
+        .menu {
+            display: none;
+            background: #607D8B;
+            width: 100%;
+            padding: 30px 10px 50px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+        }
+
+            .menu ul {
+                margin-bottom: 0;
+            }
+
+            .menu a {
+                color: #000;
+                text-transform: uppercase;
+                opacity: 0.8;
+            }
+
+                .menu a:hover {
+                    text-decoration: none;
+                    opacity: 1;
+                }
+    </style>
+    <style>
+             .cs {
+            background-color: #55bce7;
+            color: #fff;
+        }
+
+            .cs h1{
+                color: #fff;
+            }
+ 
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+    <div>
+        <header class="topbar" style="background-image: url('img/footer-bg.jpg')">
+            <div class="container ">
+                <div class="row">
+                    <!-- social icon-->
+
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align:center; margin:30px auto;">
+                        <button class="btn btn-light" style="height: 50px; width: 250px;" onclick="location.href='login.aspx'">Looking For Job? </button>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center; margin: 20px auto;"><img src="img/circleE2logo.png" alt="logo" width="80" height="80"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align:center; margin:30px auto;">
+                        <button class="btn btn-light" style="height: 50px; width: 250px;" onclick="location.href='contact.html'">Looking For Staff? </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear" id='navSticky'>
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html" style="text-transform: uppercase;"><img  src="img/logo_1.png" alt="" width="250" height="55"></a>
+
+                <!-- <img class="img-responsive" src="img/logo5.png" alt=""> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="work_with_us.html">Work With Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.aspx">Login</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2 d-flex" style="background-image: url(img/77833.jpg);width:100%" ;>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-sm-12 ftco-animate text-bread d-flex align-items-center">
+                    <div class="text" style="margin-top:80px">
+                        <h1 class="mb-3 mt-5 bread">About Us</h1>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About Us</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="page_title cs gradientvertical-background s-py-25" style="padding-bottom:30px; margin-top:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="" style="margin-top: 30px;">Welcome To Employment Express</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ls about about-padge s-pt-30" style="margin-top:20px">
+        <div class="container">
+            <div class="row">
+
+
+
+                <p style="padding:0 20px">
+                    Employment Express platform made for the vision of no one unemployed in India. We provide placement, skill development, spoken & written classes, personality development & professional classes with the help of multiple Companies, skill development centre, education institution, human resource professional , human resources consultant & top level employees of various institutions.
+                </p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="jumbotron" style="width:100%;margin:0 20px">
+                <h1 class="blue" style="color:black;text-decoration:underline;text-align:center;padding-top:20px"> Director's Message </h1>
+                <p class="blue" style="padding-left:10px;padding-right:10px">
+                    We at Employment Express look forward to collaborate with your Esteemed Institution to provide Counselling,training & job placements services.Our team is enthusiatic to have the opportunity to serve your institution for all the services and benefits that we offer to all the Jobseekers.We are in process of building long term relationship with our partners in mission of making INDIA unemployment free.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!--small cards-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-content" style="height:300px">
+                        <div class="card-header-blue">
+                            <h1 class="card-heading" style="text-align: center; padding-top: 20px">About Us</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-p">
+                                Employment Express is an HRTec start up on mission & vision of Unemployment Free INDIA. A unique Jobseeker Sourcing and Recruitment platform for Employer and Recruits. .<a href="#" data-toggle="modal" data-target="#thanksModal" style="color:blue">See More</a>
+
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-content" style="height:300px">
+
+                        <div class="card-header-orange">
+                            <h1 class="card-heading" style="text-align:center;padding-top:20px">Our Mission</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-p">
+                                <h>Employment Free India</h>
+                                We are professional,Enthusiatic and Innovative team dedicated to provide employment to every jobseeker in our Country.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-content" style="height:300px">
+                        <div class="card-header-grey">
+                            <h1 class="card-heading" style="        text-align: center;
+        padding-top: 20px">
+                                Our Vision
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-p">
+                                To be recognized as your Human Resources Partner and Career Guide through our one-stop solution.
+
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--<section class="ftco-section ftco-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-ideas"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Business Strategy</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-analysis"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Data Analysis</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-web-design"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Graphic Design</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services text-center">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-idea"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Creative</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="ftco-section ftco-counter" id="section-counter" style="background-image: url(images/bg_3.jpg);margin-top:50px" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row d-md-flex align-items-center">
+                <div class="col-lg-4">
+                    <div class="heading-section pl-md-5 heading-section-white">
+                        <div class="ftco-animate">
+                            <!--<span class="subheading">Some</span>-->
+                            <h2 class="mb-4">Current Status</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row d-md-flex align-items-center">
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="2000">0</strong>
+                                    <span>Job Seeker Enrolled</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="1800">0</strong>
+                                    <span>Job Seeker Trained</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="100">0</strong>
+                                    <span>Corporate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="10">0</strong>
+                                    <span>Franchise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="ftco-section testimony-section ftco-no-pt">
+       <div class="container-fluid px-4">
+         <div class="row ftco-animate">
+           <div class="col-md-12 testimony-top">
+             <div class="carousel-testimony owl-carousel">
+               <div class="item">
+                 <div class="testimony-wrap p-4 pb-5 text-center">
+                   <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                     <span class="quote d-flex align-items-center justify-content-center">
+                       <i class="icon-quote-left"></i>
+                     </span>
+                   </div>
+                   <div class="text">
+                     <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                     <p class="name">Garreth Smith</p>
+                     <span class="position">Marketing Manager</span>
+                   </div>
+                 </div>
+               </div>
+               <div class="item">
+                 <div class="testimony-wrap p-4 pb-5 text-center">
+                   <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
+                     <span class="quote d-flex align-items-center justify-content-center">
+                       <i class="icon-quote-left"></i>
+                     </span>
+                   </div>
+                   <div class="text">
+                     <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                     <p class="name">Garreth Smith</p>
+                     <span class="position">Interface Designer</span>
+                   </div>
+                 </div>
+               </div>
+               <div class="item">
+                 <div class="testimony-wrap p-4 pb-5 text-center">
+                   <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
+                     <span class="quote d-flex align-items-center justify-content-center">
+                       <i class="icon-quote-left"></i>
+                     </span>
+                   </div>
+                   <div class="text">
+                     <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                     <p class="name">Garreth Smith</p>
+                     <span class="position">UI Designer</span>
+                   </div>
+                 </div>
+               </div>
+               <div class="item">
+                 <div class="testimony-wrap p-4 pb-5 text-center">
+                   <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                     <span class="quote d-flex align-items-center justify-content-center">
+                       <i class="icon-quote-left"></i>
+                     </span>
+                   </div>
+                   <div class="text">
+                     <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                     <p class="name">Garreth Smith</p>
+                     <span class="position">Web Developer</span>
+                   </div>
+                 </div>
+               </div>
+               <div class="item">
+                 <div class="testimony-wrap p-4 pb-5 text-center">
+                   <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                     <span class="quote d-flex align-items-center justify-content-center">
+                       <i class="icon-quote-left"></i>
+                     </span>
+                   </div>
+                   <div class="text">
+                     <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                     <p class="name">Garreth Smith</p>
+                     <span class="position">System Analyst</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row justify-content-center mb-5 pb-3">
+           <div class="col-md-12 heading-section ftco-animate text-center">
+             <span class="subheading">Testimony</span>
+             <h2 class="mb-4">My satisfied customer says</h2>
+             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+           </div>
+         </div>
+       </div>
+     </section>-->
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <span class="subheading">Team</span>
+                    <h2 class="mb-4">Our Leaders</h2>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 ftco-animate">
+                    <div class="staff text-center">
+                        <div class="img" style="background-image: url(images/AnkitSharma.jpg);"></div>
+                        <div class="text pt-4">
+                            <h3>Ankit Sharma</h3>
+                            <span class="position mb-2">Head-Job Seeker Acquisition</span>
+                            <p>Researcher || Developer || Strategy Manager || 6+ years of experience in education sector.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 ftco-animate">
+                    <div class="staff text-center">
+                        <div class="img" style="background-image: url(images/DheerajSharma.jpeg);"></div>
+                        <div class="text pt-4">
+                            <h3>Dheeraj Sharma</h3>
+                            <span class="position mb-2">Head-Corporate Acquisition</span>
+                            <p>Business Analyst || Leadership || Talent Acquisition and Developer || In-Depth Knowledge of HR and corporate collaborations</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid" style="background-color:white">
+        <h1 style="text-align:center;padding-top:30px;text-decoration:underline;padding-bottom:30px;">Our  Partners/ Our Clients</h1>
+        <section class="customer-logos slider" style="padding-bottom:50px">
+            <div class="slide"><img src="img/images.png"></div>
+            <div class="slide"><img src="img/images (1).jpg"></div>
+            <div class="slide"><img src="img/Keva Industries-2.jpeg"></div>
+            <div class="slide"><img src="img/Britannia Engineering Limited-1.jpeg"></div>
+            <div class="slide"><img src="img/M&C Saatchi Performance-2.jpeg"></div>
+            <div class="slide"><img src="img/Emami Limited-1.jpg"></div>
+            <div class="slide"><img src="img/cafe-coffee-day-logo-png-4.png"></div>
+            <div class="slide"><img src="img/trivedi.jpg"></div>
+            <div class="slide"><img src="img/images.jpg"></div>
+            <div class="slide"><img src="img/KWW Wires & Strips-1.jpg"></div>
+            <div class="slide"><img src="img/7 Signs & Prints-1.jpg"></div>
+            <div class="slide"><img src="img/jaipur.jpg"></div>
+
+        </section>
+    </div>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style=" background-image: url('img/footer-bg.jpg');">
+        <div class="container">
+            <div class="row mb-5 d-flex">
+                <div class="col-md-4 col-sm-12">
+                    <div class="ftco-footer-widget mb-4">
+                        <div>
+                            <img src="img/E2logo.png" width="280" height="115" />
+                        </div>
+
+                        <h2 class="ftco-heading-2" style="margin-top:30px">Employment Express Verband LLP </h2>
+
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href=""><span class="icon-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Quick Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="work_with_us.html">Work With Us</a></li>
+
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Details</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">ROOM NO. 15, PLOT NO. 22, Near MUNICIPAL SCHOOL, KHERWADI, BANDRA (E), Mumbai, Maharashtra, India 400051.</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+91)7905044451</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@employmentexpress.net</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+    <div class="modal fade text-center py-5" style="top:90px;" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/circleE2logo.png" style="	    margin-top: -85px;
+    width: 33%;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background: #6c757d;
+    ">
+
+                    <p class="pb-3 text-muted">
+                        Employment Express is an HRTech start up on mission & vision of Unemployment Free INDIA. A unique Jobseeker Sourcing and Recruitment platform for Employer and Recruits.End to End Recruitment Process,minimizing the time,money and resources spent in recruitment
+                        process by the Employers.Job Placement to all the Jobseekers registered with us.Unemployment Benefits to unemployed Jobseekers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navSticky");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+</html>

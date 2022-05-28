@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Employment Express</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+
+
+    <style>
+        	.chat{
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.card{
+			height: 500px;
+			border-radius: 15px !important;
+			background-color: rgba(0,0,0,0.4) !important;
+		}
+		.contacts_body{
+			padding:  0.75rem 0 !important;
+			overflow-y: auto;
+			white-space: nowrap;
+		}
+		.msg_card_body{
+			overflow-y: auto;
+		}
+		.card-header{
+			border-radius: 15px 15px 0 0 !important;
+			border-bottom: 0 !important;
+		}
+	 .card-footer{
+		border-radius: 0 0 15px 15px !important;
+			border-top: 0 !important;
+	}
+		.container{
+			align-content: center;
+		}
+		.search{
+			border-radius: 15px 0 0 15px !important;
+			background-color: rgba(0,0,0,0.3) !important;
+			border:0 !important;
+			color:white !important;
+		}
+		.search:focus{
+		     box-shadow:none !important;
+           outline:0px !important;
+		}
+		.type_msg{
+			background-color: rgba(0,0,0,0.3) !important;
+			border:0 !important;
+			color:white !important;
+			height: 60px !important;
+			overflow-y: auto;
+		}
+			.type_msg:focus{
+		     box-shadow:none !important;
+           outline:0px !important;
+		}
+		.attach_btn{
+	border-radius: 15px 0 0 15px !important;
+	background-color: rgba(0,0,0,0.3) !important;
+			border:0 !important;
+			color: white !important;
+			cursor: pointer;
+		}
+		.send_btn{
+	border-radius: 0 15px 15px 0 !important;
+	background-color: rgba(0,0,0,0.3) !important;
+			border:0 !important;
+			color: white !important;
+			cursor: pointer;
+		}
+		.search_btn{
+			border-radius: 0 15px 15px 0 !important;
+			background-color: rgba(0,0,0,0.3) !important;
+			border:0 !important;
+			color: white !important;
+			cursor: pointer;
+		}
+		.contacts{
+			list-style: none;
+			padding: 0;
+		}
+		.contacts li{
+			width: 100% !important;
+			padding: 5px 10px;
+			margin-bottom: 15px !important;
+		}
+	.active{
+			background-color: rgba(0,0,0,0.3);
+	}
+		.user_img{
+			height: 70px;
+			width: 70px;
+			border:1.5px solid #f5f6fa;
+		
+		}
+		.user_img_msg{
+			height: 40px;
+			width: 40px;
+			border:1.5px solid #f5f6fa;
+		
+		}
+	.img_cont{
+			position: relative;
+			height: 70px;
+			width: 70px;
+	}
+	.img_cont_msg{
+			height: 40px;
+			width: 40px;
+	}
+	.online_icon{
+		position: absolute;
+		height: 15px;
+		width:15px;
+		background-color: #4cd137;
+		border-radius: 50%;
+		bottom: 0.2em;
+		right: 0.4em;
+		border:1.5px solid white;
+	}
+	.offline{
+		background-color: #c23616 !important;
+	}
+	.user_info{
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 15px;
+	}
+	.user_info span{
+		font-size: 20px;
+		color: white;
+	}
+	.user_info p{
+	font-size: 10px;
+	color: rgba(255,255,255,0.6);
+	}
+	.video_cam{
+		margin-left: 50px;
+		margin-top: 5px;
+	}
+	.video_cam span{
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+		margin-right: 20px;
+	}
+	.msg_cotainer{
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 10px;
+		border-radius: 25px;
+		background-color: #82ccdd;
+		padding: 10px;
+		position: relative;
+	}
+	.msg_cotainer_send{
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: 10px;
+		border-radius: 25px;
+		background-color: #78e08f;
+		padding: 10px;
+		position: relative;
+	}
+	.msg_time{
+		position: absolute;
+		left: 0;
+		bottom: -15px;
+		color: rgba(255,255,255,0.5);
+		font-size: 10px;
+	}
+	.msg_time_send{
+		position: absolute;
+		right:0;
+		bottom: -15px;
+		color: rgba(255,255,255,0.5);
+		font-size: 10px;
+	}
+	.msg_head{
+		position: relative;
+	}
+	
+	
+    </style>
+</head>
+
+<body class="nav-md" id="mess_ko">
+	<div class="container body">
+
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="" class="site_title"> <span>Employment Express</span></a>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<!-- menu profile quick info -->
+					<div class="profile clearfix">
+						<div class="profile_pic">
+							<img src="images/me1.png" alt="..." class="img-circle profile_img">
+						</div>
+						<div class="profile_info">
+							<span>Welcome,</span>
+							<h2>Admin</h2>
+						</div>
+					</div>
+					<!-- /menu profile quick info -->
+
+					<br />
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<h3>General</h3>
+							<ul class="nav side-menu">
+								<li>
+									<a><i class="fa fa-table"></i> User Details <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+
+										<li><a href="userprofile.html">User Profile</a></li>
+										<li><a href="token_history.html">Token History</a></li>
+									</ul>
+								</li>
+								<li>
+									<a><i class="fa fa-edit"></i> Courses <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="cyber_security_basics.html">Cyber Security - Basics</a></li>
+
+									</ul>
+								</li>
+								<li>
+									<a><i class="fa fa-comment"></i> Messages <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="message.html">Message</a></li>
+
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+					<!-- /sidebar menu -->
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+
+						<a data-toggle="tooltip" data-placement="top" title="Logout" data-bind="click:logout">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+						</a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+					<nav class="nav navbar-nav">
+						<ul class=" navbar-right">
+							<li class="nav-item dropdown open" style="padding-left: 15px;">
+								<a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+									<img src="images/me1.png" alt="">Admin
+								</a>
+								<div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+
+									<a class="dropdown-item" data-bind="click:logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+								</div>
+							</li>
+
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+			<!-- page content -->
+
+
+
+			<div class="right_col" style="padding-left:0;padding-right:0">
+				<div class="col-md-12" style="margin-left:0;margin-right:0;background-color: #204060;">
+				<div class="col-md-4 col-lg-4 col-sm-12 chat" style="margin-top:60px;margin-bottom:40px;margin-left:0;margin-right:0;">
+					<div class="card mb-sm-3 mb-md-0 contacts_card">
+						<div class="card-header">
+							<h2 style="font-size:20px;">Chats</h2>
+						</div>
+						<div class="card-body contacts_body">
+							<ul class="contacts">
+								<li class="active" data-bind="foreach: users">
+									<div class="d-flex bd-highlight">
+										<div class="img_cont">
+											<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img">
+
+										</div>
+										<div class="user_info" style="cursor:pointer;" data-bind="attr: {id: user_ids}, click: show_chat.bind($data, user_ids)">
+											<span data-bind="text:user_name"></span>
+
+										</div>
+									</div>
+									<br />
+								</li>
+
+							</ul>
+						</div>
+						<div class="card-footer"></div>
+					</div>
+				</div>
+				<div class="col-md-8 col-lg-8 col-sm-12 chat" style="margin-top:60px;margin-bottom:40px;margin-left:0;">
+					<div class="card" id="message_content">
+						<div class="card-header msg_head">
+
+
+						</div>
+						<div class="card-body msg_card_body">
+							<h2 style="text-align:center;padding-top:180px;">No Message</h2>
+						</div>
+						<div class="card-footer">
+
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- /page content -->
+			<!-- footer content -->
+
+		</div>
+		<footer>
+			<div class="pull-right">
+				Employment Express
+			</div>
+			<div class="clearfix"></div>
+		</footer>
+		<!-- /footer content -->
+	</div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/knockout-3.2.0.js"></script>
+    <script src="js/message_k.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+
+</body>
+</html>

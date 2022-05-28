@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="frontpage-course-list">
+        <h2>Courses</h2>
+        <div class="courses frontpage-course-list-all">
+            <div class="coursebox clearfix odd first" data-courseid="39" data-type="1"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <script>
+        var courses = [
+    {
+    	"id"   : "2",
+    	"name" : "Opioids and Driving",
+    	"tags" : "Family Medicine,Hospital Medicine,Pharmacy/Therapeutics"
+    },
+    {
+    	"id"   : "21",
+    	"name" : "Relationship with Industry",
+    	"tags" : "UBC Faculty"
+    },
+    {
+    	"id"   : "39",
+    	"name" : "EC Update",
+    	"tags" : "Pharmacy/Therapeutics,Gynecology,Family Medicine,Specialty Medicine,Emergency,Sexual Health" 
+    },
+    {
+    	"id"   : "43",
+    	"name" : "Billing Basic",
+    	"tags" : "Family Medicine,IMGs"
+    },
+    {
+    	"id"   : "45",
+    	"name" : "Billing Advanced",
+    	"tags" : "Family Medicine,IMGs"
+    },
+    {
+    	"id"   : "44",
+    	"name" : "Late Effects",
+    	"tags" : "Oncology,Family Medicine,Specialty Medicine"
+    },
+    {
+    	"id"   : "37",
+    	"name" : "Youth Transition",
+    	"tags" : "Family Medicine,Specialty Medicine,Pediatrics"
+    },
+    {
+    	"id"   : "20",
+    	"name" : "CCOPE Breast Cancer",
+    	"tags" : "Oncology,Mammography,Family Medicine"
+    },
+    {
+    	"id"   : "19",
+    	"name" : "Return to Workplace",
+    	"tags" : "Family Medicine,Work Disability"
+    },
+    {
+    	"id"   : "33",
+    	"name" : "HIV Testing",
+    	"tags" : "Family Medicine,HIV"
+    },
+    {
+    	"id"   : "56",
+    	"name" : "5As",
+    	"tags" : "Family Medicine,Specialty Medicine"
+    },
+    {
+    	"id"   : "6",
+    	"name" : "Breastfeeding (Specialists)",
+    	"tags" : "Specialty Medicine"
+    },
+    {
+    	"id"   : "4",
+    	"name" : "Breastfeeding (Family Doctors)",
+    	"tags" : "Family Medicine,Obstetrics"
+    },
+    {
+    	"id"   : "35",
+    	"name" : "Fetal Health",
+    	"tags" : "Family Medicine,Midwifery,Nurse Practitioners"
+    },
+    {
+    	"id"   : "31",
+    	"name" : "Safe Prescribing for Midwives",
+    	"tags" : "Midwifery,Pharmacy/Therapeutics"
+    },
+    {
+    	"id"   : "48",
+    	"name" : "Cervical Cancer Screening in BC",
+    	"tags" : "Specialty Medicine,Oncology"
+    },
+    {
+    	"id"   : "36",
+    	"name" : "SEMP",
+    	"tags" : "Emergency,Family Medicine,Specialty Medicine"
+    },
+    {
+    	"id"   : "46",
+    	"name" : "UGEMP",
+    	"tags" : "Emergency,Ultrasound,Family Medicine,Specialty Medicine"
+    },
+    {
+    	"id"   : "52",
+    	"name" : "PEMP",
+    	"tags" : "Emergency,Pediatrics,Family Medicine,Specialty Medicine"
+    },
+    {
+    	"id"   : "17",
+    	"name" : "Faculty US Workshop",
+    	"tags" : "UBC Faculty,Ultrasound"
+    },
+    {
+    	"id"   : "8",
+    	"name" : "PRA-BC Phase 1 and 2 Orientation",
+    	"tags" : "Family Medicine"
+    },
+    {
+    	"id"   : "66",
+    	"name" : "PRA-BC: CFA Orientation",
+    	"tags" : "Family Medicine,IMGs"
+    },
+    {
+    	"id"   : "63",
+    	"name" : "OAT Support",
+    	"tags" : "Family Medicine,Specialty Medicine,Pharmacy/Therapeutics"
+    },
+    {
+    	"id"   : "24",
+    	"name" : "HOUSE-OB",
+    	"tags" : "HOUSE,Ultrasound,Obstetrics,Rural"
+    },
+    {
+    	"id"   : "11",
+    	"name" : "House Master",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "76",
+    	"name" : "HOUSE 100 Mile",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "68",
+    	"name" : "HOUSE Prince George",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "60",
+    	"name" : "HOUSE Fort St. John",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "58",
+    	"name" : "HOUSE Chetwynd",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "57",
+    	"name" : "HOUSE Dawson Creek",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "55",
+    	"name" : "HOUSE Vanderhoof",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "30",
+    	"name" : "HOUSE Residents",
+    	"tags" : "HOUSE,Ultrasound,Rural"
+    },
+    {
+    	"id"   : "77",
+    	"name" : "HT in MH 2017",
+    	"tags" : "Mental Health,Conferences"
+    },
+    {
+    	"id"   : "75",
+    	"name" : "COTR Apr 28 2017",
+    	"tags" : "CME on the Run,Conferences"
+    },
+    {
+    	"id"   : "78",
+    	"name" : "COTR June 9 2017",
+    	"tags" : "CME on the Run,Conferences"
+    },
+    {
+        "id"   : "62",
+        "name" : "COTR Mar 31 2017",
+        "tags" : "CME on the Run,Conferences"
+    },
+    {
+    	"id"   : "73",
+    	"name" : "RHC2017",
+    	"tags" : "Conferences,Rural"
+    },
+    {
+    	"id"   : "67",
+    	"name" : "MDP2017",
+    	"tags" : "Conferences,Obstetrics"
+    },
+    {
+    	"id"   : "64",
+    	"name" : "WEDOC",
+    	"tags" : "Conferences,Emergency"
+    },
+    {
+    	"id"   : "59",
+    	"name" : "Sexual Health 2017",
+    	"tags" : "Conferences,Sexual Health"
+    },
+    {
+    	"id"   : "54",
+    	"name" : "WAS2017",
+    	"tags" : "Conferences,Anesthesiology"
+    },
+];
+
+        !function (e) { e.fn.tagSort = function (t) { var s = { items: ".item-tagsort", tagElement: "span", tagClassPrefix: !1, itemTagsView: !1, itemTagsSeperator: " ", itemTagsElement: !1, sortType: "exclusive", fadeTime: 0, reset: !1 }; t = e.extend(s, t); var i = { generateTags: function (s) { var a = {}, n = { pointers: [], tags: [] }, o = e(document.createElement(t.tagElement)); return s.each(function (s) { $element = e(this); var r = $element.data("item-tags"), c = r.match(/,\s+/) ? r.split(", ") : r.split(","); e.each(c, function (n, r) { var c = r.toLowerCase(); a[c] || (a[c] = [], i.container.append(t.tagClassPrefix !== !1 ? o.clone().text(r).addClass((t.tagClassPrefix + r.toLowerCase()).replace(/[!\"#$%&'\(\)\*\+,\.\/:;<=>\?\@\[\\\]\^`\{\|\}~]/g, "")) : o.clone().text(r))), t.itemTagsView !== !1 && (t.itemTagsElement !== !1 ? $element.find(t.itemTagsView).append(e(document.createElement(t.itemTagsElement)).clone().text(r)) : $element.find(t.itemTagsView).append(n > 0 ? t.itemTagsSeperator + r : r)), a[c].push(s) }), "exclusive" == t.sortType && (n.pointers.push(s), n.tags.push(c)) }), "inclusive" == t.sortType || "single" == t.sortType ? a : "exclusive" == t.sortType ? n : void 0 }, exclusiveSort: function (t) { var s = [[], []]; return e.each(t.pointers, function (a, n) { var o = !0; i.container.find(".tagsort-active").each(function (i) { -1 == t.tags[a].indexOf(e(this).text()) && (o = !1, s[0].push(n)) }), 1 == o && s[1].push(n) }), s }, inclusiveSort: function (t, s) { var a = [s, []]; return i.container.find(".tagsort-active").each(function (s) { e.each(t[e(this).text().toLowerCase()], function (e, t) { a[0].splice(a[0].indexOf(t), 1), a[1].push(t) }) }), a }, showElements: function (s, i) { e.each(s, function (e, s) { i.eq(s).fadeIn(t.fadeTime) }) }, hideElements: function (s, i) { e.each(s, function (e, s) { i.eq(s).fadeOut(t.fadeTime) }) }, inititalize: function (s) { i.container = s; for (var a, n = e(t.items), o = [], r = t.reset, c = 0; c < n.length; c++)o.push(c); i.tags = i.generateTags(n, i.container); var l = i.container.find(t.tagElement); l.click(function () { "single" == t.sortType ? e(this).hasClass("tagsort-active") ? e(this).toggleClass("tagsort-active") : (e(".tagsort-active").removeClass("tagsort-active"), e(this).toggleClass("tagsort-active"), a = i.inclusiveSort(i.tags, o.slice())) : (e(this).toggleClass("tagsort-active"), a = "inclusive" == t.sortType ? i.inclusiveSort(i.tags, o.slice()) : i.exclusiveSort(i.tags)), l.hasClass("tagsort-active") || (a = [[], o.slice()]), a[0].length > 0 && i.hideElements(a[0], n), a[1].length > 0 && i.showElements(a[1], n) }), r && e(r).click(function () { e(".tagsort-active").removeClass("tagsort-active"), a = [[], o.slice()], i.showElements(a[1], n) }) } }; return i.inititalize(this), e(this) } }(jQuery);
+
+        $('div.tagsort-tags-container').tagSort({
+            items: '.coursebox', sortType: 'single'
+        });
+    </script>
+</body>
+</html>
